@@ -1,0 +1,1 @@
+The ALX SE Hello World project is the first project in the world of C programming language. 
