@@ -1,20 +1,22 @@
 #include <stdio.h>
 /**
- * main - A progam that prints alphabe a-z and A-Z
- *
+ * main - Prints the alphabet in lowercase and uppercase.
  * Return: 0 (Success)
  */
 int main(void)
 {
-	char lowercase = 'a';
-	char uppercase = 'A';
+	char ch;
 
-	while (lowercase <= 'z')
-		putchar(lowercase);
-		lowercase++;
-	while (uppercase <= 'Z')
-		putchar(uppercase);
-		uppercase++;
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
+	ch = 'A';
+	while (ch <= 'Z')
+	{
+		putchar(ch);
+		ch++;
+	}
+
 	putchar('\n');
+
 	return (0);
 }
