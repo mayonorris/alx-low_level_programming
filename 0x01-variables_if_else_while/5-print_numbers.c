@@ -1,15 +1,18 @@
 #include <stdio.h>
 /**
- *  main - Program that prins all sigle digits from 0 to 9.
+ * main - A program that prints single digit numbers from 0 to 10 .
  *
- *  Return: 0 (Success)
+ * Return: 0 (Success)
  */
 int main(void)
 {
-	int n;
+	int n = 0;
 
-	for (n = 0; n < 10; n++)
+	while (n < 10)
 		printf("%d", n);
-	printf('\n');
+		n++;
+
+	printf("\n");
 
 	return (0);
+}
