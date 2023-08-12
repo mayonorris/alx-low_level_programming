@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Prints all combinations of  of single-digit numbers.
+ * main - Prints all combinations of single-digit numbers.
  *
  * Return: 0 (Success)
  */
@@ -10,11 +10,12 @@ int main(void)
 
 	for (digit = 0; digit <= 9; digit++)
 		putchar(digit + '0');
+	if (digit != 9)
+		putchar(',');
+		putchar(' ')
 
-		if (digit != 9)
-			putchar(',');
-			putchar(' ');
 	putchar('\n');
 
 	return (0);
 }
+
