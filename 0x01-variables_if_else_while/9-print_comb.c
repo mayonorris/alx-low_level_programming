@@ -1,19 +1,23 @@
 #include <stdio.h>
 /**
- * main - Prints all combinations of single-digit numbers.
+ * main - prints all possible combinations of single-digit numbers.
+ *
  * Return: 0 (Success)
  */
 int main(void)
 {
-	putchar('0');
+	int combin = 0;
 
-	for (int i = 1; i <= 9; i++)
-		putchar(',');
-	putchar(' ');
-	putchar(i + '0');
+	while (combin <= 9)
+
+		putchar((combin % 10) + '0');
+		combin++;
+		if (combin <= 9)
+
+			putchar(',');
+			putchar(' ');
 
 	putchar('\n');
 
 	return (0);
 }
-
