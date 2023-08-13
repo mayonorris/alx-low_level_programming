@@ -16,16 +16,19 @@ int main(void)
 		{
 			putchar(i + '0');
 			putchar(j + '0');
-			j++;
-			if (j != 9)
+			if (i + j != 17)
 			{
 				putchar(',');
 				putchar(' ');
 			}
+			else
+			{
+				putchar('\n');
+			}
+			j++;
 		}
 		i++;
 	}
-	putchar('\n');
 
 	return (0);
 }
