@@ -16,12 +16,12 @@ int main(void)
 		{
 			putchar(i + '0');
 			putchar(j + '0');
+			j++;
 			if (j != 9)
 			{
 				putchar(',');
 				putchar(' ');
 			}
-			j++;
 		}
 		i++;
 	}
