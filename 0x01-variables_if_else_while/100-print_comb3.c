@@ -16,6 +16,7 @@ int main(void)
 		{
 			putchar(i + '0');
 			putchar(j + '0');
+			j++;
 			if (j == 9)
 			{
 				putchar('\n');
@@ -25,7 +26,6 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
-			j++;
 		}
 		i++;
 	}
