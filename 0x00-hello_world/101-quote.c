@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 /**
- * main - Printing text without using printf or puts
+ * main - Entry
  * Return: 1 (Success)
  */
 int main(void)
