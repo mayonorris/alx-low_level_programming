@@ -7,16 +7,20 @@
 int main(void)
 {
 	int i = 0;
-	int j;
+	int j = i+1;
 
 	while (i < 9)
-		j = i + 1;
-
-		putchar(i + '0');
-		putchar(j + '0');
-		putchar(',');
-		putchar(' ');
+	{
+		while (j < 10 )
+		{
+			putchar(i + '0');
+			putchar(j + '0');
+			j++;
+			putchar(',');
+			putchar(' ');
+		}
 		i++;
+	}
 
 	putchar('\n');
 
