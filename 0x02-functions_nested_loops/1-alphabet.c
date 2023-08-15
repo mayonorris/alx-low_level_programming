@@ -3,7 +3,7 @@
  * main - A program that prints alphabet in lowercase
  * Return: 0 (Success)
  */
-int main(void)
+void print_alphabet(void)
 {
 /* Declare a character variable to contains alphabet*/
 	char ch;
@@ -12,5 +12,4 @@ int main(void)
 		_putchar(ch);
   /*print a new line to the console.*/
 	_putchar('\n');
-	return (0);
 }
