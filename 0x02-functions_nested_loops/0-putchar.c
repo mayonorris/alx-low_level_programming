@@ -1,13 +1,21 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
  * main - Entry level
  *
- * Description: A program that prints _putchar
- *
  * Return: 0 (Success)
+ *
  */
 int main(void)
 {
-	printf("_putchar\n");
+	putchar('_');
+	putchar('p');
+	putchar('u');
+	putchar('t');
+	putchar('c');
+	putchar('h');
+	putchar('a');
+	putchar('r');
+	putchar('\n');
 	return (0);
 }
