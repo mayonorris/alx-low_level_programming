@@ -3,7 +3,6 @@
  * main - prints first 50 Fibonacci numbers
  * Return: 0 (Success)
  */
-
 int main(void)
 {
 	int n = 1;
@@ -13,15 +12,14 @@ int main(void)
 
 	while (n <= max / 2)
 	{
-		printf("%li, %li, ", a, b);
+		printf("%li, ", a);
+		printf("%li", b);
 		a += b;
 		b += a;
 		n++;
+		if (max % 2 == 1)
+			printf("%li", a);
 	}
-	if (max % 2 == 1)
-		printf("%li", a);
-
 	printf("\n");
-
 	return (0);
 }
