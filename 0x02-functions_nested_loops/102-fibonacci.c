@@ -11,11 +11,11 @@ int main(void)
 	int i;
 
 	for (i = 0; i < count - 1; i++)
-	{	printf("%lld, ", fib1);
+	{	printf("%lid, ", fib1);
 
 		fib1 = fib2;
 		fib2 = next;
 	}
-	printf("%lld\n", fib1);
+	printf("%lid\n", fib1);
 	return (0);
 }
