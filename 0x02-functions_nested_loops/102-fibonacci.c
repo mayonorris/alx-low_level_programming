@@ -6,8 +6,8 @@
 int main(void)
 {
 	int count = 50;
-	long  fib1 = 1, fib2 = 2;
-	long next = fib1 + fib2;
+	long int fib1 = 1, fib2 = 2;
+	long int next = fib1 + fib2;
 	int i;
 
 	for (i = 0; i < count - 1; i++)
