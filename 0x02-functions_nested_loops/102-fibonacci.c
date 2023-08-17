@@ -10,7 +10,7 @@ int main(void)
 	long next = fib1 + fib2;
 	int i;
 
-	for (int i = 0; i < count - 1; i++)
+	for (i = 0; i < count - 1; i++)
 	{	printf("%lld, ", fib1);
 
 		fib1 = fib2;
