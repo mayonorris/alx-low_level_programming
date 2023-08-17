@@ -1,25 +1,20 @@
 #include <stdio.h>
 /**
- * main - prints first 50 Fibonacci numbers
+ * main - prints Fibonacci sequence (50)
  * Return: 0 (Success)
  */
 int main(void)
 {
-	int n = 1;
-	int max = 50;
-	long a = 1;
-	long b = 2;
+	int count = 50;
+	long long fib1 = 1, fib2 = 2;
 
-	while (n <= max / 2)
-	{
-		printf("%li, ", a);
-		printf("%li", b);
-		a += b;
-		b += a;
-		n++;
-		if (max % 2 == 1)
-			printf("%li", a);
+	for (int i = 0; i < count - 1; i++)
+	{	printf("%lld, ", fib1);
+		long long next = fib1 + fib2;
+
+		fib1 = fib2;
+		fib2 = next;
 	}
-	printf("\n");
+	printf("%lld\n", fib1);
 	return (0);
 }
