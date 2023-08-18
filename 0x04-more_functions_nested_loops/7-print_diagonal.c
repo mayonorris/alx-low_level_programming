@@ -13,7 +13,7 @@ void print_line(int n)
 
 		while (j <= n)
 		{
-			_putchar(92);
+			_putchar("\\");
 			j++;
 		}
 
