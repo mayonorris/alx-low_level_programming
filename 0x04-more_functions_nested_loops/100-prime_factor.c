@@ -5,8 +5,8 @@
  */
 int main(void)
 {
-	long long num = 612852475143;
-	long long largest = 2;
+	long num = 612852475143;
+	long largest = 2;
 
 	while (num > 1)
 	{
@@ -20,7 +20,7 @@ int main(void)
 		}
 	}
 
-	printf("%lld\n", largest);
+	printf("%ld\n", largest);
 	return (0);
 }
 
