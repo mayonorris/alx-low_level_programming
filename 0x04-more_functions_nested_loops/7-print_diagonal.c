@@ -1,11 +1,11 @@
 #include "main.h"
+
 /**
- * print_line - A program that draws a diagonal line
- * @n: number of times \ will be printed
- * Return: Always 0.
- *
+ * print_diagonal - A program that draws a diagonal line.
+ * @n: number of times \ will be printed.
+ * Return: Always 0
  */
-void print_line(int n)
+void print_diagonal(int n)
 {
 	int i = 0, j;
 
