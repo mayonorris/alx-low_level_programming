@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 /**
  * _atoi - Entry point
  * A function that converts string to integer
