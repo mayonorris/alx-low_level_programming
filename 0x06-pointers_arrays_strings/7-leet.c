@@ -1,26 +1,26 @@
 #include "main.h"
 /**
  * leet - Entry level
- * @str: An input string
- * Return: a string.
+ * @s: string
+ * Return: string
  */
-char *leet(char *str)
-{
-	char *original = str;
-	char *leet_characters = "aAeEoOtTlL";
-	char *leet_replacements = "43071";
 
-	for (int i = 0; str[i] != '\0'; i++)
+char *leet(char *s)
+{
+
+	int a[11] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+	int b[11] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
+
+	int i, j;
+
+	for (j = 0; s[j] != '\0'; j++)
 	{
-		for (int j = 0; leet_characters[j] != '\0'; j++)
+		for (i = 0; a[i] != '\0'; i++)
 		{
-			if (str[i] == leet_characters[j])
-			{
-				str[i] = leet_replacements[j];
-				break;
-			}
+			if (s[j] == a[i])
+				s[j] = b[i];
 		}
 	}
 
-	return (original);
+	return (s);
 }
