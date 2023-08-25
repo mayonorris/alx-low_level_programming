@@ -6,9 +6,9 @@
  */
 char *leet(char *str)
 {
-	char *original = str; /*Store the original pointer*/
-	char *leet_characters = "aAeEoOtTlL";/*Characters to be replaced*/
-	char *leet_replacements = "43071";/*Corresponding replacements*/
+	char *original = str;
+	char *leet_characters = "aAeEoOtTlL";
+	char *leet_replacements = "43071";
 
 	for (int i = 0; str[i] != '\0'; i++)
 	{
@@ -17,7 +17,7 @@ char *leet(char *str)
 			if (str[i] == leet_characters[j])
 			{
 				str[i] = leet_replacements[j];
-				break;/*Exit the inner loop once a replacement is found*/
+				break;
 			}
 		}
 	}
