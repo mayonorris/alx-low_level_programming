@@ -1,24 +1,33 @@
 #include "main.h"
-/**
- * cap_string - Entry level
- * Return: a string.
- */
-char *cap_string(char *str)
-{
-	bool new_word = true;
 
-	for (int i = 0; str[i] != '\0'; i++)
+/**
+ * cap_string - capitalize first letter of each word
+ * @s: string to manipulate
+ * Return: string
+ */
+
+char *cap_string(char *s)
+{
+	int i = 0;
+
+
+	if (s[i] >= 'a' && s[i] <= 'z')
+		s[i] = s[i] - 'a' + 'A';
+	i++;
+
+	while (s[i] != '\0')
 	{
-		if (new_word && islower(str[i]))
-		{
-			str[i] = toupper(str[i]);
-			new_word = false;
-		}
-		if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' ||
-				str[i] == ',' || str[i] == ';' || str[i] == '.' || str[i] == '!' || str[i] == '?' || str[i] == '"' || str[i] == '(' || str[i] == ')' || str[i] == '{' || str[i] == '}')
-		{
-			new_word = true;
-		}
+
+
+		if ((s[i] >= 'a' && s[i] <= 'z')
+		    && (s[i - 1] == ',' || s[i - 1] == ';' || s[i - 1] == '.' ||
+			s[i - 1] == '!' || s[i - 1] == '?' || s[i - 1] == '"' ||
+			s[i - 1] == '(' || s[i - 1] == ')' || s[i - 1] == '{' ||
+			s[i - 1] == '}' || s[i - 1] == ' ' || s[i - 1] == '\t'
+			|| s[i - 1] == '\n'))
+			s[i] = s[i] - 'a' + 'A';
+		i++;
 	}
-	return (str);
+
+	return (s);
 }
