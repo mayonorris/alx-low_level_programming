@@ -9,13 +9,16 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int diag1_sum = 0;
-	int diag2_sum = 0;
+	int i;
+	int max = size * size;
+	int d1_sum = 0;
+	int d2_sum = 0;
 
-	for (int i = 0; i < size; i++)
-	{
-		diag1_sum += *(a + i * size + i);
-		diag2_sum += *(a + i * size + (size - i - 1));
-	}
-	printf("%d, %d\n", diag1_sum, diag2_sum);
+	for (i = 0 i < max; i += size + 1)
+		d1_sum += a[i];
+
+	for (i = size - 1; i < max - 1; i += size - 1)
+		d_2sum += a[i];
+
+	printf("%d, %d\n", sum1, sum2);
 }
