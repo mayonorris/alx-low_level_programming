@@ -1,5 +1,23 @@
 #include "main.h"
 /**
+ * _root - Search for the square root of n
+ *
+ * @n: An input number
+ * @root: root
+ * Return: natural square root, or -1 if not natural root
+ */
+int _root(int n, int root)
+{
+	if (root * root > n)
+		return (-1);
+
+	if (root * root == n)
+		return (root);
+
+	return (_root(n, root + 1));
+}
+
+/**
  * _sqrt_recursion - a function that returns the natural
  * square root of a number.
  * @n : An input number
@@ -8,15 +26,8 @@
  */
 int _sqrt_recursion(int n)
 {
-	int i = 0;
+	if (n < 0)
+		return (-1);
 
-	while (i <= n / 2)
-	{
-		if (i * i == n)
-		{
-			return (i);
-		}
-		i++;
-	}
-	return (-1);
+	return (_root(n, 0));
 }
