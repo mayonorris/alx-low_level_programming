@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - A program that prints the number of 
+ * main - A program that prints the number of
  * arguements you passed into it
  * @argc: An argument counter
  * @argv: An argument values
