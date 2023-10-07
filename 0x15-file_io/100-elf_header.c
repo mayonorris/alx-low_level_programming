@@ -23,18 +23,20 @@ void print_elf_header_info(Elf64_Ehdr *header)
 }
 int main(int argc, char *argv[])
 {
+	int fd;
+	Elf64_Ehdr header;
+
 	if (argc != 2)
 	{
 		fprintf(stderr, "Usage: %s elf_filename\n", argv[0]);
 		return (98);
 	}
-	int fd = open(argv[1], O_RDONLY);
+	fd = open(argv[1], O_RDONLY);
 	if (fd < 0)
 	{
 		perror("Error opening file");
 		return (98);
     }
-	Elf64_Ehdr header;
 	if (read(fd, &header, sizeof(header)) != sizeof(header))
 	{
 		perror("Error reading ELF header");
